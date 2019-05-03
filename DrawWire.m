@@ -1,12 +1,10 @@
-function DrawWire(a,b,c)
-r = a;
-amp = b;
-Oscillations = c;
+function DrawWire(radius,amp,Oscillations)
 
 thetaRes = 0.001;
 theta = 0:thetaRes:2*pi;
 
-r = a + amp*cos(Oscillations*theta);
+r = radius + amp*(sin(Oscillations*theta).^4-0.5);
+
 x = r.*cos(theta);
 y = r.*sin(theta);
 plot(x,y);

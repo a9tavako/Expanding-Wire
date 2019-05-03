@@ -6,7 +6,7 @@ ampres = 0.01;
 minamp = 0;
 maxamp = 0.5*radius0;
 
-%Check difference amps and see which one gives the expected length. 
+%Check different amps and see which one gives the expected length. 
 bestError = radius0^2;
 bestamp = 0;
 for amp = minamp:ampres:maxamp
